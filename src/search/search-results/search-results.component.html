@@ -1,3 +1,5 @@
 <ul>
-    <li #result *ngFor="let searchResult of searchResults" (click)="startOfRound ? updatePrompt(result.textContent) : updateGuesses(result.textContent)">{{searchResult.Title}}</li>
+    <li #result *ngFor="let searchResult of searchResults" (click)="startOfRound ? updatePrompt(result.textContent) : updateGuesses(result.textContent)">
+        <img [src]="searchResult.Poster" alt="Movie Poster" (click)="startOfRound ? updatePrompt(result.textContent) : updateGuesses(result.textContent)"/>
+          {{searchResult.Title}}</li>
 </ul>
