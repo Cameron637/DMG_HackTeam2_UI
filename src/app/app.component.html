@@ -1,4 +1,14 @@
 <h1>
-  {{title}}
+  {{prompt}}
 </h1>
-<ul class="list-component"></ul>
+
+<section *ngIf="!player" class="login" (onLogin)="login($event)"></section>
+
+<section *ngIf="gameStart">
+<section class="search-bar" [startOfRound]="startOfRound" [isMyTurn]="isMyTurn" (onPromptUpdated)="updatePrompt($event)" (onGuessesUpdated)="updateGuessList($event)"></section>
+
+<section>
+    <section class="guess-list" [guessList]="guessList"></section>
+    <section class="guess-list" [guessList]="otherPlayersGuessList"></section>
+</section>
+</section>
