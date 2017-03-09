@@ -1,0 +1,5 @@
+.list-item{
+    cursor: pointer;
+    border: 1px solid blue;
+    margin-bottom: 6px;
+}
