@@ -1,0 +1,3 @@
+<label for="search">Search Movies</label>
+<input type="text" name="search" [(ngModel)]="search" (input)="searchMovies()" [disabled]="startOfRound && !isMyTurn" />
+<div class="search-results" [searchResults]="searchResults" (onPromptUpdated)="updatePrompt($event)" (onGuessesUpdated)="updateGuessList($event)"></div>

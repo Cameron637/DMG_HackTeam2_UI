@@ -1,0 +1,3 @@
+<ul>
+    <li #result *ngFor="let searchResult of searchResults" (click)="startOfRound ? updatePrompt(result.textContent) : updateGuesses(result.textContent)">{{searchResult.Title}}</li>
+</ul>

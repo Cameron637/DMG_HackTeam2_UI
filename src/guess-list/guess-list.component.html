@@ -1,0 +1,3 @@
+<ul>
+    <li *ngFor="let guess of guessList" [ngClass]="{ 'bad-guess': guess.isBadGuess }">{{guess.title}}</li>
+</ul>
