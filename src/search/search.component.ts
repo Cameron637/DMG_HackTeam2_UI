@@ -30,6 +30,7 @@ export class SearchComponent {
             })
             .then(searchResults => {
                 this.searchResults = searchResults.Search;
+                console.dir(searchResults);
             })
             .catch(error => console.error(error));
     }
