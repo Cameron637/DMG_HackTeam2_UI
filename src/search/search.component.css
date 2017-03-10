@@ -1,0 +1,6 @@
+.search-results{
+    display: flex;
+    width: fit-content;
+
+    border: 2px solid black;
+}

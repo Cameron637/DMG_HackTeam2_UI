@@ -1,8 +1,17 @@
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 img{
-    width: 10%;
-    height: 10%;
+    height: 200px;
 }
 
 li{
     list-style: none;
+    display: inline-flex;
+
+    /*border:1px solid blue;*/
+    cursor: pointer;
+    padding: 3px;
 }
